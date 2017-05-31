@@ -51,9 +51,9 @@ fn soundex_code(c: char) -> char {
 ///
 /// ```
 /// use soundex;
-/// let code: String = soundex::american_soundex("Sirname".to_string());
+/// let code: String = soundex::american_soundex("Sirname");
 /// ```
-pub fn american_soundex(s: String) -> String {
+pub fn american_soundex(s: &str) -> String {
     // Define a result
     let mut result = String::from("");
     // if we need to skip, outline which element to skip
@@ -141,6 +141,6 @@ fn american_soundex_correct() {
         ("Rubin","R150"),
     ];
     for (i, o) in params {
-        assert_eq!(american_soundex(i.to_string()), o.to_string());
+        assert_eq!(american_soundex(i), o.to_string());
     }
 }
