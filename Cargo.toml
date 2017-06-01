@@ -2,10 +2,12 @@
 name = "soundex"
 description = "Soundex Calculations"
 version = "0.2.0"
-authors = ["Ben H <husobee@e-ie.io>"]
+authors = ["Ben H <husobee@e-ie.io>", "Jean-Marie Comets <jean.marie.comets@gmail.com>"]
 homepage = "https://github.com/husobee/rust-soundex"
 repository = "https://github.com/husobee/rust-soundex"
 readme = "README.md"
 keywords = ["soundex", "husobee"]
 license-file = "LICENSE"
 
+[dependencies]
+itertools = "0.6.0"
