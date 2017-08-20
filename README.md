@@ -6,5 +6,5 @@ Performs Soundex calculation on a string passed in
 
 ```rust
 use soundex;
-let code: String = soundex::american_soundex("Sirname".to_string());
+let code: String = soundex::american_soundex("Sirname");
 ```
